@@ -19,7 +19,7 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[500px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[450px] md:max-w-[320px] rounded-t-[400px] object-fit"
               src="assets/profile-image1.jpg"
             />
           </div>
@@ -56,8 +56,12 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            As a Full Stack Developer with a year's experience and a strong
+            foundation from Tech Elevator's coding bootcamp, I excel in creating
+            innovative solutions with meticulous attention to detail. Passionate
+            about continuous learning and industry connectivity, I embrace
+            adaptability and precision, ensuring ongoing growth and success in
+            the tech world.
           </p>
         </motion.div>
 
