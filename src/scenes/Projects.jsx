@@ -58,9 +58,13 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          Welcome to my portfolio of projects, where each endeavor showcases my
+          passion for technology and problem-solving. From creating dynamic web
+          applications to developing efficient software solutions, these
+          projects represent a journey of continuous learning and skill
+          enhancement. Each one holds a story of challenges tackled, innovations
+          developed, and teamwork executed, reflecting my dedication to
+          excellence in the field of Full Stack Development.
         </p>
       </motion.div>
 
