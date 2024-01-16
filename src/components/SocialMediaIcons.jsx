@@ -15,7 +15,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="../assets/resume.png" />
+        <img alt="resume-link" src="../assets/resume.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"

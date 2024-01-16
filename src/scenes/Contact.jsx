@@ -17,6 +17,12 @@ const Contact = () => {
     }
   };
 
+  function downloadFileAtURL() {
+    const fileURL =
+      "https://drive.google.com/file/d/1hIsczx5AAaDtTZq_IuCmHSi-DHfgiFUJ/view?usp=sharing";
+    window.open(fileURL, "_blank");
+  }
+
   return (
     <section id="contact" className="contact py-48">
       {/* HEADINGS */}
@@ -127,12 +133,20 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="w-60 p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
               type="submit"
             >
               SEND ME A MESSAGE
             </button>
           </form>
+          <button
+            className="w-60 p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
+            onClick={() => {
+              downloadFileAtURL();
+            }}
+          >
+            Download Resume
+          </button>
         </motion.div>
       </div>
     </section>
