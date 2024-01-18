@@ -19,7 +19,7 @@ const Contact = () => {
 
   function downloadFileAtURL() {
     const fileURL =
-      "https://drive.google.com/file/d/1hIsczx5AAaDtTZq_IuCmHSi-DHfgiFUJ/view?usp=sharing";
+      "https://drive.google.com/file/d/1f0nXwX2vtYlpBNNY-PFhnVXLdyQek6ut/view?usp=drive_link";
     window.open(fileURL, "_blank");
   }
 
