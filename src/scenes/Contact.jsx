@@ -133,19 +133,19 @@ const Contact = () => {
             )}
 
             <button
-              className="w-60 p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
+              className="w-60 p-5 bg-yellow font-semibold text-deep-blue text-lg mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
               type="submit"
             >
               SEND ME A MESSAGE
             </button>
           </form>
           <button
-            className="w-60 p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
+            className="w-60 p-5 bg-yellow font-semibold text-deep-blue text-lg mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md"
             onClick={() => {
               downloadFileAtURL();
             }}
           >
-            Download Resume
+            DOWNLOAD RESUME
           </button>
         </motion.div>
       </div>
