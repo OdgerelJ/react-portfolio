@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 h-100%"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -20,7 +20,7 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="
-              hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-h-[800px] md:max-h-[800px] rounded-t-[400px]"
+              hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-h-[600px] md:max-h-[600px] rounded-t-[400px]"
               src="assets/profile-image1.jpg"
             />
           </div>
