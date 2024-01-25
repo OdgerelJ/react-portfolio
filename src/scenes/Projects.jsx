@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description }) => {
+const Project = ({ title, description, link }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase() + ".jpeg";
@@ -25,6 +25,18 @@ const Project = ({ title, description }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{description}</p> {/* Using the description prop */}
+        <a href={link} target="_blank">
+          <motion.div
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 0.9] }}
+            transition={{ duration: 0.25 }}
+            className="app__flex"
+          >
+            <button className="w-60 p-5 bg-yellow font-semibold text-deep-blue text-lg mt-5 hover:bg-red hover:text-white transition duration-500 rounded-md">
+              Open
+            </button>
+          </motion.div>
+        </a>
       </div>
       <img src={`../assets/${projectTitle}`} alt={projectTitle} />
     </motion.div>
@@ -84,15 +96,26 @@ const Projects = () => {
           <Project
             title="Project E commerce"
             description="This sleek e-commerce platform offers a minimalist design with a focus on product imagery, allowing users to shop with ease. The intuitive interface includes a streamlined shopping bag feature, enhancing the checkout process. It's an exemplary model of modern online retail design that balances aesthetics with user-centric functionality."
+            link="https://ecommerce-kappa-pied.vercel.app/"
           />
           <Project
             title="Project Analytics"
             description="The Analytics Dashboard provides a dynamic and detailed visualization of business metrics in a dark-mode interface. It offers users real-time insights with interactive charts and maps for data-driven decision-making. The dashboard is a testament to efficient design, merging sophisticated functionality with accessibility."
+            link="https://dashboard-react-uxu4.vercel.app/"
           />
 
           {/* ROW 2 */}
-          {/* <Project title="Project 3" />
-          <Project title="Project 4" />
+          <Project
+            title="Tic Tac"
+            description="The Tic-Tac-Toe project is a classic two-player game built with HTML, CSS, and JavaScript. Players take turns to align three Xs or Os horizontally, vertically, or diagonally on a 3x3 grid for a win. Enjoy interactive gameplay in a user-friendly interface."
+            link="https://tic-tac-toe-xi-teal.vercel.app/"
+          />
+          <Project
+            title="3D Shirt"
+            description="Create your unique and exclusive shirt with our brand-new 3D customization tool. Unleash your imagination and define your own style"
+            link="https://project-threejs-ai-nine.vercel.app/"
+          />
+          {/* <Project title="Project 4" />
           <Project title="Project 5" /> */}
 
           {/* ROW 3 */}
