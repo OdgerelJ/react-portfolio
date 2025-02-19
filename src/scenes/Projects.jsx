@@ -25,7 +25,7 @@ const Project = ({ title, description, link }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{description}</p> {/* Using the description prop */}
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <motion.div
             whileInView={{ scale: [0, 1] }}
             whileHover={{ scale: [1, 0.9] }}

@@ -1,6 +1,8 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="h-50 bg-nav-footer-blue p-5">
       <div className="w-10/12 mx-auto">
@@ -10,7 +12,7 @@ const Footer = () => {
             Odie Jamsranjav
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2024  All Rights Reserved.
+            ©{currentYear} All Rights Reserved.
           </p>
         </div>
       </div>
